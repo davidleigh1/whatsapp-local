@@ -7,11 +7,13 @@ Many EMT volunteers are willing, equipped and ready to respond to local incident
 This app was intended to run as a Browser App or Browser Extension, and will alert the user audibly and visually to any mention of a local street or landmark that appears in a WhatsApp Desktop chat.
 
 # How It Works
-1. User can save one or more Addresses in the App (e.g. 'Home' and 'Work')
-2. User can set his Current Location by entering it into the App, or by selecting one of the saved Addresses
-3. User sets the Alert Range (distance in miles or km) from his Current Location for which he wishes to be alerted
-4. The App looks up and stores the geo-coordinates of the user's Current Location (#2)
-5. The App calls the excellent GeoNames.org API and receives a list of all street names within the Alert Range (#3) from the user's Current Location (#2)
+1. User can add/save/update the following details in the App:
+  1. One or more `Addresses` with a free-text label (e.g. *'Home'* and *'Work'*)
+  2. Their `Current Location`.  This can be entered into the App, or user can select one of the saved `Addresses`
+  3. The `Alert Range` (distance in miles or km) from their `Current Location` for which user wishes to be alerted
+  4. A `Default City` which will be assumed if no city name is found in the WhatsApp feed
+4. The App then looks up and stores the geo-coordinates of the user's `Current Location`
+5. The App calls the excellent GeoNames.org API and receives a list of all street names within the `Alert Range` from the user's `Current Location`
 6. Please note - in dense urban areas with many unique street names, the user may be informed that the maximum available Alert Range is more limited than was requested.
 7. The App monitors the WhatsApp feeds in the following way:
   1. Prevents processing of browser tabs which are not WhatsApp Web
